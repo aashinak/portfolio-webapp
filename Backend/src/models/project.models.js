@@ -18,6 +18,9 @@ const projectSchema = new Schema(
         redirectLink: {
             type: String,
         },
+        githubLink: {
+            type: String
+        }
     },
     { timestamps: true }
 );
