@@ -11,9 +11,9 @@ const validateProjectData = (data) => {
         errors.push("Project name is required and must be a string.");
     }
 
-    if (!tags || tags === undefined) {
-        errors.push("Tags are required and must be a non-empty array.");
-    }
+    // if (!tags || tags === undefined) {
+    //     errors.push("Tags are required and must be a non-empty array.");
+    // }
 
     if (data.redirectLink && !/^https?:\/\/.+/.test(data.redirectLink)) {
         errors.push("Redirect link, if provided, must be a valid URL.");
